@@ -96,6 +96,7 @@ public
 # FuseBox cache
 .fusebox/
 package-lock.json
+uploads 
 
 # DynamoDB Local files
 .dynamodb/

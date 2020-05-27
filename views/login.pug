@@ -1,4 +1,9 @@
 extends layout/main
 
 block content
-    p login!
+    .form-container
+        form(action=routes.login, method="post") <!--메소드는 get으로 하면 모든 정보가 url에 보이게되어 post로 해서 비밀로 유지해야한다.-->
+            input(type="email", name="email", placeholder="Email", required=true)
+            input(type="password", name="password", placeholder="Password", required=true)
+            input(type="submit", value="Log In")    
+        include partials/socialLogin   
